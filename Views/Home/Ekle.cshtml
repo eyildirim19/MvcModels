@@ -1,0 +1,13 @@
+﻿<!-- View'dan controller'a veri gönderirken form veya ajax (ileride göreceğiz) ile göndeririz-->
+
+<!--
+	View'dan model'e form yöntemi ile veri gönderirken eğer parametreniz model ise model propertylerinin isimleri ile input isimleri eşleşirse veriyi bind edebilirsiniz. Bu yüzden inputlarımıza isim (name) verirken propertynameler olmasına dikkat edelim...
+-->
+
+<form action="@Url.Action("Ekle","Home")" method="post">
+	<input name="Id" placeholder="Öğrenci ID Giriniz" type="text" />
+	<br />
+	<input name="Adi" placeholder="Öğrenci Adı Giriniz" type="text" />
+	<br />
+	<input type="submit" value="Gönder" />
+</form>

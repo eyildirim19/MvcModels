@@ -1,0 +1,20 @@
+﻿<!-- view'ın modelini tanımladık-->
+@model List<MvcModels.Models.Ogrenci>
+
+<html>
+<head>
+</head>
+<body>
+
+	<!--model tanımlaması yaptıktan sonra Model ile model'e erişebiliriz...-->
+
+	<a href="@Url.Action("Ekle","Home")">Ogrenci EKle</a>
+
+	<ul>
+		@foreach (var item in Model)
+		{
+			<li> @item.Id - @item.Adi </li>
+		}
+	</ul>
+</body>
+</html>
